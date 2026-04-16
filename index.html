@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nemavhola Ndiene Portfolio</title>
+<style>
+    /* Reset */
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+    body {
+        background-color: #f0f4f8;
+        color: #333;
+        line-height:1.6;
+        scroll-behavior: smooth;
+    }
+
+    /* Header */
+    header {
+        background: linear-gradient(to right, #1E3A8A, #3B82F6);
+        color: white;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    header img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid white;
+        margin-bottom: 20px;
+        transition: transform 0.5s;
+    }
+
+    header img:hover {
+        transform: scale(1.1);
+    }
+
+    header h1 {
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+
+    header p {
+        font-size: 1.2em;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    /* Navigation */
+    nav {
+        background-color: #3B82F6;
+        display: flex;
+        justify-content: center;
+        padding: 12px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+
+    nav a:hover {
+        color: #ffeb3b;
+        transform: scale(1.1);
+    }
+
+    /* Section & Cards */
+    section {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 0 20px;
+    }
+
+    section h2 {
+        font-size: 2em;
+        color: #1E3A8A;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #3B82F6;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+
+    .card {
+        background-color: white;
+        padding: 30px 25px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.8s ease-out;
+    }
+
+    .card.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    ul { list-style: disc; padding-left: 20px; }
+
+    /* Skills */
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .skill {
+        flex: 1 1 45%;
+    }
+
+    .skill h4 { margin-bottom: 8px; }
+
+    .progress-bar {
+        background-color: #e0e0e0;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 22px;
+    }
+
+    .progress {
+        height: 100%;
+        background-color: #3B82F6;
+        width: 0%;
+        border-radius: 20px;
+        text-align: right;
+        padding-right: 10px;
+        color: white;
+        font-weight: bold;
+        transition: width 2s;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #1E3A8A;
+        color: white;
+    }
+
+    /* Responsive */
+    @media(max-width:768px){
+        .skills-container { flex-direction: column; }
+    }
+
+</style>
+</head>
+<body>
+
+<header>
+    <img src="https://i.ibb.co/CKcWZLc2/Whats-App-Image-2026-03-09-at-11-41-39.jpg" alt="Ndiene Profile Picture">
+    <h1>Nemavhola Ndiene</h1>
+    <p>Computer Science Student | Technology Enthusiast | Aspiring Software Developer</p>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#interests">Interests</a>
+    <a href="#career">Career Goals</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>My name is Nemavhola Ndiene, a Computer Science student at the University of Venda, South Africa. Passionate about technology, I enjoy exploring computer systems, software, and networks to solve real-world problems.</p>
+        <p>I focus on developing strong skills in programming, logical reasoning, and problem-solving, building knowledge in software development, computer networks, operating systems, and system design.</p>
+        <p>Outside of studies, I enjoy gaming, studying, and reading. Gaming inspires my interest in digital systems and software development.</p>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="card">
+        <p><strong>Bachelor of Computer Science</strong><br>University of Venda – South Africa</p>
+        <ul>
+            <li>Programming and Software Development</li>
+            <li>Computer Networks</li>
+            <li>Operating Systems</li>
+            <li>Logic and Computational Thinking</li>
+        </ul>
+    </div>
+</section>
+
+<section id="certifications">
+    <h2>Certifications</h2>
+    <div class="card">
+        <ul>
+            <li>Cisco Networking Academy</li>
+            <li>Networks 1</li>
+            <li>Networks 2</li>
+        </ul>
+        <p>Strengthened my understanding of network architecture, communication protocols, and digital networking systems.</p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+
+        <div class="project">
+            <h3>Student Payment System</h3>
+            <p>A system to track student payments and modules using forms.</p>
+        </div>
+
+        <div class="project">
+            <h3>Java Console Applications</h3>
+            <p>Built beginner Java programs focusing on logic and input/output.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills-container">
+        <div class="skill">
+            <h4>Java Programming</h4>
+            <div class="progress-bar"><div class="progress" data-progress="70%">70%</div></div>
+        </div>
+        <div class="skill">
+            <h4>Computer Networking Fundamentals</h4>
+            <div class="progress-bar"><div class="progress" data-progress="80%">80%</div></div>
+        </div>
+        <div class="skill">
+            <h4>Logical Problem Solving</h4>
+            <div class="progress-bar"><div class="progress" data-progress="85%">85%</div></div>
+        </div>
+        <div class="skill">
+            <h4>Flowchart Design</h4>
+            <div class="progress-bar"><div class="progress" data-progress="75%">75%</div></div>
+        </div>
+        <div class="skill">
+            <h4>Basic System and Software Concepts</h4>
+            <div class="progress-bar"><div class="progress" data-progress="80%">80%</div></div>
+        </div>
+    </div>
+</section>
+
+<section id="interests">
+    <h2>Interests</h2>
+    <div class="card">
+        <ul>
+            <li>Software Development</li>
+            <li>Computer Networks</li>
+            <li>Artificial Intelligence</li>
+            <li>Technology Research</li>
+            <li>Gaming and Digital Systems</li>
+        </ul>
+    </div>
+</section>
+
+<section id="career">
+    <h2>Career Goals</h2>
+    <div class="card">
+        <ul>
+            <li>Become a professional software developer with strong programming and system design skills.</li>
+            <li>Master object-oriented programming and software engineering principles.</li>
+            <li>Gain industry experience through internships, projects, and collaborations.</li>
+            <li>Contribute to innovative technologies that solve real-world problems.</li>
+            <li>Continue growing academically and professionally within the technology sector.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>If you would like to get in touch, feel free to contact me:</p>
+        <ul>
+            <li><strong>Phone:</strong> 076 185 8272</li>
+            <li><strong>Email:</strong> nemavholandiene@gmail.com</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/nemavholandiene-commits" target="_blank">github.com/yourusername</a></li>
+        </ul>
+    </div>
+</section>
+<footer>
+    <p>&copy; 2026 Nemavhola Ndiene. All Rights Reserved.</p>
+</footer>
+
+<script>
+    // Animate progress bars
+    window.addEventListener('DOMContentLoaded', () => {
+        const progresses = document.querySelectorAll('.progress');
+        progresses.forEach(bar => {
+            const width = bar.getAttribute('data-progress');
+            setTimeout(() => { bar.style.width = width; }, 500);
+        });
+    });
+
+    // Smooth scroll for nav links
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            const target = document.querySelector(link.getAttribute('href'));
+            target.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+    // Scroll animation for cards
+    const cards = document.querySelectorAll('.card');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.2 });
+
+    cards.forEach(card => observer.observe(card));
+</script>
+
+</body>
+</html>
