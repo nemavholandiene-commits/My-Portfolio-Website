@@ -1,7 +1,7 @@
 # My-Portfolio-Website
 
 ## Description
-This is a personal portfolio website that showcases my skills and projects.
+This is my personal portfolio website that showcases my skills and projects.
 
 ## Features
 Responsive design
