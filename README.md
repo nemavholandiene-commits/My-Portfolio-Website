@@ -9,9 +9,9 @@ Navigation bar
 Contact section
 
 ## Technologies used 
-HTML
-CSS
-JAVAScript
+1. HTML
+2. CSS
+3. JAVAScript
 
 ## How to Run
 1. Download the project
